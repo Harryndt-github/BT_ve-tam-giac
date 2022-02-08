@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ve Tam Giac</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                line-height: 1.42857143;
+                color: #333;
+                background-color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            let a , b;
+            for (a = 1; a <= 5; a++) {
+                document.write("<br>");
+                for (b = 1; b <= a; b++) {
+                    document.write("*");
+                }
+            }
+            document.write("<br>");
+            for (a = 5; a >= 1; a--) {
+                document.write("<br>");
+                for (b = 1; b <= a; b++) {
+                    document.write("*");
+                }
+            }
+            document.write("<br>");
+            for (a = 0; a <= 5; a++) {
+                document.write("<br>");
+                for (b = 0; b < 5 - a; b++) {
+                    document.write("&nbsp;");
+                }
+            for (b = 1; b <= a; b++) {
+                document.write("*");
+            }
+            }
+            document.write("<br>");
+
+            for (a = 5; a > 0; a--) {
+                console.log("a === ", a);
+                document.write("<br>");
+                for (b = 0; b < 5 - a; b++) {
+                    console.log("b === ", b);
+                    document.write("&nbsp;");
+                }
+                for (k = 5 - a; k < 5; k++) {
+                    console.log("k === ", k);
+                    document.write("*");
+                }
+            }
+        </script>
+    </body>
